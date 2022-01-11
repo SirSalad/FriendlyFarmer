@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "friendlyfarmer",
+  "version": "${version}",
+
+  "name": "Friendly Farmer",
+  "description": "Helps players to not break immature crops.",
+  "authors": ["SirSalad"],
+  "contact": {
+    "issues": "https://github.com/SirSalad/FriendlyFarmer/issues",
+    "sources": "https://github.com/SirSalad/FriendlyFarmer"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": ["io.github.sirsalad.friendlyfarmer.FriendlyFarmerMod"]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  }
+}
