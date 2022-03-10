@@ -15,7 +15,7 @@ jobs:
           java-version: '17'
 
       - name: Build Mod
-        run: ./gradlew build
+        run: gradle build
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v2
