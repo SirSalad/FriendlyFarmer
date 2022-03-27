@@ -42,8 +42,9 @@ public final class FriendlyFarmerMod implements ClientModInitializer {
     private static final Map<Block, BiPredicate<BlockPos, World>> TALL_PLANTS = Map.of(
             Blocks.SUGAR_CANE, TALL_PLANT,
             Blocks.BAMBOO, TALL_PLANT,
+            Blocks.CACTUS, TALL_PLANT,
             Blocks.KELP_PLANT, TALL_PLANT,
-            Blocks.CACTUS, TALL_PLANT
+            Blocks.KELP, (pos, world) -> world.getBlockState(pos.down(1)).getBlock() != Blocks.KELP_PLANT
     );
 
     @Override
