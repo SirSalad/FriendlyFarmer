@@ -33,7 +33,15 @@ public final class FriendlyFarmerMod implements ClientModInitializer {
             Map.entry(Blocks.BEETROOTS, state -> state.get(BeetrootsBlock.AGE) != 3),
             Map.entry(Blocks.NETHER_WART, state -> state.get(NetherWartBlock.AGE) != 3),
             Map.entry(Blocks.SWEET_BERRY_BUSH, state -> state.get(SweetBerryBushBlock.AGE) != 3),
-            Map.entry(Blocks.COCOA, state -> state.get(CocoaBlock.AGE) != 2)
+            Map.entry(Blocks.COCOA, state -> state.get(CocoaBlock.AGE) != 2),
+            Map.entry(Blocks.OAK_SAPLING, STEM),
+            Map.entry(Blocks.SPRUCE_SAPLING, STEM),
+            Map.entry(Blocks.BIRCH_SAPLING, STEM),
+            Map.entry(Blocks.JUNGLE_SAPLING, STEM),
+            Map.entry(Blocks.ACACIA_SAPLING, STEM),
+            Map.entry(Blocks.DARK_OAK_SAPLING, STEM),
+            Map.entry(Blocks.CRIMSON_FUNGUS, STEM),
+            Map.entry(Blocks.WARPED_FUNGUS, STEM)
     );
 
     private static final BiPredicate<BlockPos, World> TALL_PLANT = (pos, world) ->
